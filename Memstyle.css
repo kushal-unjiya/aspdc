@@ -1,0 +1,108 @@
+/* THIS IS NEW CODE */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #f8f8f8;
+  text-align: center;
+}
+h1{
+  font-size: 4rem;
+}
+header {
+  background-color: #000000;
+}
+.logo img {
+  width: 100%;
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+.aboutus{
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #909090, #6a6a6a, #464646, #262626, #000000);
+  }
+.about-us{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    padding: 2%;
+    background-image: linear-gradient(to top, #909090, #6a6a6a, #464646, #262626, #000000);
+  }
+  .member-card {
+    width: 200px;
+    margin: 10px;
+    padding: 9px;
+    border-radius: 5px;
+    text-align: start;
+    transition: transform 0.4s;
+    display: inline;
+    /* height: 230px; */
+  }
+  .member-card:hover {
+    transform: scale(1.01);
+    background-color: #191919;
+    border: none;
+    box-shadow: 0 4px 10px 0 rgba(0, 191, 255, 0.299), 0 6px 18px 0 rgba(0, 191, 255, 0.66);
+    /* width: 96%; */
+  }
+  .member-details.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Show the hidden member details on hover */
+  .member-card:hover .member-details.hidden {
+    display: block;
+    opacity: 1;
+    color: rgb(185, 185, 185);
+    transform: translateY(0);
+    
+  }
+/* Rest of the CSS styles */
+.member-card img {
+  width: 100px;
+  border-radius: 100%;
+}
+.member-details {
+  margin-top: 10px;
+}
+.social-icons img {
+  width: 20px;
+  margin: 0 5px;
+}
+footer {
+background-color: #000000;
+color: #fff;
+text-align: center;
+padding: 10px;
+background-image: linear-gradient(to bottom, #909090, #6a6a6a, #464646, #262626, #000000);
+
+}
+
+.heroText {
+  background: linear-gradient(30deg,#ff4b4b 20%,
+  #fae900 40%,
+  rgb(83, 255, 100) 60%,
+  #3a92db 70%,white); 
+     -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-text-fill-color: transparent;
+     background-size: 700% auto;
+     animation: textShine 5s forwards infinite alternate;
+ }
+ @keyframes textShine {
+     0% {
+         background-position: 0% 50%;
+     }
+     100% {
+         background-position: 100% 0%;
+     }
+    
+ }
